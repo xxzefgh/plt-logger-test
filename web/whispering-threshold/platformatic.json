@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.platformatic.dev/@platformatic/service/2.49.0.json",
+  "service": {
+    "openapi": true
+  },
+  "watch": true,
+  "server": {
+    "logger": {
+      "level": "debug"
+    }
+  },
+  "plugins": {
+    "paths": [
+      {
+        "path": "./plugins",
+        "encapsulate": false
+      },
+      "./routes"
+    ],
+    "typescript": "{PLT_WHISPERING_THRESHOLD_TYPESCRIPT}"
+  }
+}
